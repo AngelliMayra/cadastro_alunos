@@ -1,0 +1,48 @@
+
+
+
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #000233;
+    height: 110vh;
+    color: aliceblue;
+    background-image: url("aluno2.jpg");
+    font-family: Oswald;
+    overflow: auto;
+    padding: 8px 5px;
+    outline: none;
+    border-radius: 5px;
+}
+
+.center {
+    margin-top: 20px;
+    text-align: center;
+}
+
+#titulo{
+    text-align: center;
+    
+}
+ 
+
+input[type="button"]{
+    padding: 1rem;
+    font-size: 1rem;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .3s;
+    color: aliceblue;
+    background-color: rgb(2, 2, 27);
+
+
+}
+
+input[type="button"]:hover{
+    background-color: #000233;
+}
+    
