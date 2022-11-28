@@ -4,9 +4,9 @@
 
 .container {
     display: flex;
-    align-items: center;
+    align-items: baseline;
     justify-content: center;
-    flex-direction: column;
+    flex-direction: row;
     background-color: #000233;
     height: 110vh;
     color: aliceblue;
@@ -18,14 +18,29 @@
     border-radius: 5px;
 }
 
-.center {
+.item {
     margin-top: 20px;
     text-align: center;
+}
+
+.item2{
+    margin-top: 20px;
+    text-align: center;
+    margin-left: 50px;
+
 }
 
 #titulo{
     text-align: center;
     
+}
+
+#tableListaAlunos{
+    text-align: center; 
+    border: 1px solid #f1f1f1; 
+    margin-top: 20px;
+    padding: 20px ;
+    border-radius: 5px;
 }
  
 
@@ -38,6 +53,7 @@ input[type="button"]{
     transition: .3s;
     color: aliceblue;
     background-color: rgb(2, 2, 27);
+    margin-top: 15px;
 
 
 }
@@ -45,4 +61,7 @@ input[type="button"]{
 input[type="button"]:hover{
     background-color: #000233;
 }
+
+
+
     
