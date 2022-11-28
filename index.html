@@ -11,51 +11,57 @@
 </head>
 
 <body class="container">
-    <header class="titulo">
-        <h1>CADASTRO DE ALUNO 📚</h1>
-    </header>
-    <form action="" method="post">
-        <div class="content">
+
+    <div class="item">
+        <header class="titulo">
+            <h1>CADASTRO DE ALUNO 📚</h1>
+        </header>
+        <form action="" method="post">
+
 
             <label for="inputNome">Nome:</label> <br />
             <input type="text" name="inputNome" id="inputNome"><br>
 
-
             <label for="inputMatricula" class="margin-top"> Matricula:</label><br />
             <input type="text" name="inputMatricula" id="inputMatricula"><br>
-
 
             <label for="inputNota1" class="margin-top">Nota1:</label><br />
             <input type="number" name="inputNota1" id="inputNota1"><br>
 
-
             <label for="inputNota2" class="margin-top">Nota2:</label><br />
             <input type="number" name="inputNota2" id="inputNota2"><br>
 
-
             <label for="inputNota3" class="margin-top">Nota3:</label><br />
             <input type="number" name="inputNota3" id="inputNota3"><br>
-        </div>
 
-        <div class="center">
-            <input type="button" value="Enviar" id="btnEnviar">
-        </div>
-    </form>
+            <div class="center">
+                <input type="button" value="Enviar" id="btnEnviar">
+            </div>
+        </form>
+    </div>
 
-    <table id="tableListaAlunos" style="text-align: center; border: 1px solid black; margin-top: 20px;">
-        <thead>
-            <th>Nome</th>
-            <th>Matricula</th>
-            <th>Nota1</th>
-            <th>Nota2</th>
-            <th>Nota3</th>
-            <th>Média</th>
-            <th>Excluir</th>
-        </thead>
-        <tbody id="tbodyListaAlunos">
 
-        </tbody>
-    </table>
+
+
+    <div class="item2">
+        <header class="titulo">
+            <h1>RELAÇÃO DE ALUNOS 📚</h1>
+        </header>
+        <table id="tableListaAlunos">
+            <thead>
+                <th>Nome</th>
+                <th>Matricula</th>
+                <th>Nota1</th>
+                <th>Nota2</th>
+                <th>Nota3</th>
+                <th>Média</th>
+                <th>Excluir</th>
+            </thead>
+            <tbody id="tbodyListaAlunos">
+
+            </tbody>
+        </table>
+    </div>
     <script src="script.js">Verificar</script>
 </body>
 
