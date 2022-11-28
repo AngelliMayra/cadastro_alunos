@@ -50,11 +50,23 @@ btnEnviar.addEventListener("click", (e) => {
     let nota1 = parseFloat(inputNota1.value);
     let nota2 = parseFloat(inputNota2.value);
     let nota3 = parseFloat(inputNota3.value);
-    contador+= 1
+    contador+= 1;
+
+    if(!nome && !matricula && !nota1 && !nota2 && !nota3 ) {
+        alert('Preencha os campos')
+        return
+
+    }
+    
+    if (isNaN (nota1) && isNaN (nota2) && isNaN (nota3)) {
+        alert("Informe uma nota válida");  
+        return 
+    }
+
 
     const aluno = new Aluno(nome, matricula, nota1, nota2, nota3);
 
-    tr += `<tr id="tr_aluno${contador}">
+    tr = `<tr id="tr_aluno${contador}">
                     <td>${nome}</td>
                     <td>${matricula}</td>
                     <td>${nota1}</td>
@@ -64,7 +76,7 @@ btnEnviar.addEventListener("click", (e) => {
                     <td><input id="btnExcluir_${contador}" onClick="excluir(${contador})" type="button" value="Excluir"></input></td>
                 </tr>`;
 
-    tbodyListaAlunos.innerHTML = tr;
+    tbodyListaAlunos.innerHTML += tr;
 });
 
 
